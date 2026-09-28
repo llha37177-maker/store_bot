@@ -2,7 +2,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # ==================== [ بيانات التعديل السريع ] ====================
-TOKEN = "8923734387:AAE-2xYNOoXO2IvG62EV8gCEnEUNqE6Bg8M"
+import os
+TOKEN = os.environ.get("BOT_TOKEN")
 
 ADMIN_HANDLE = "https://t.me/4m_t"
 CHANNEL_URL = "https://t.me/lqp1q"
